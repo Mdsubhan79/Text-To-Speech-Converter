@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.villain {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #01584a, #610d0d );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 5%;
+}
+
+.villain h1 {
+    font-size: 6vw;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.villain h1 span {
+    color: #036e45;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 25vw;
+    background: #000000;
+    color: white;
+    font-size: 4vw;
+    border: 0;
+    outline: 0;
+    padding: 6vw;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    font-size: 2.5vw;
+    color: #575252;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+button {
+    background: #610d0d;
+    color: #fff;
+    font-size: 0.2rem; 
+    width: 100%;
+    padding: 2px 4px; 
+    border-radius: 10px;  
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;  
+    min-width: 60px;   
+    min-height: 20px;  
+    margin: 0 auto;
+}
+
+button img {
+    width: 10px;
+    margin-right: 4px;  
+}
+
+
+select { 
+    flex: 1;
+    color: #fff;
+    background: #000000;
+    height: auto; 
+    padding: 8px 15px;  
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 12px; 
+    background-position-x: calc(100% - 12px); 
+    background-position-y: center; 
+    font-size: 0.8rem;  
+    width: 100%; 
+    max-width: 230px;  
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+@media screen and (max-width: 290px) {
+    .villain h1 {
+        font-size: 14px; 
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 80px; 
+        font-size: 10px; 
+        padding: 6px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vw;
+    }
+
+    button {
+        width: 100%;
+        padding: 6px 0; 
+        font-size: 12px;
+        max-width: 100%;
+        min-width: 100%; 
+    }
+
+    button img {
+        width: 20px; 
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        font-size: 10px; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .villain h1 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .villain h1 {
+        font-size: 3rem; 
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    textarea {
+        width: 80%;
+        height: 250px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .row {
+        width: 80%;
+        gap: 20px;
+    }
+
+    button {
+        width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 250px;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .villain h1 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    textarea {
+        width: 60%;
+        height: 300px;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .row {
+        width: 60%;
+        gap: 30px;
+    }
+
+    button {
+        width: 250px;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 250px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
